@@ -1,0 +1,145 @@
+.mongono {
+	min-height: 100vh;
+	background-image: url('./images/background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	padding-bottom: 3rem;
+
+	@media (max-width: 991px) {
+		min-height: auto;
+	}
+
+	&-inner {
+		width: 100%;
+		height: 100%;
+		background: url('./images/lady.png') center right 0;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: relative;
+	}
+	&-container {
+		position: relative;
+	}
+	.btn-mongono {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: transparent;
+		color: white;
+		border-color: #ff0698;
+		background-image: linear-gradient(to right, #ff0698, #ff3d6e, #ff7545, #ffa918, #ffd800);
+
+		@media (max-width: 767px) {
+			top: 0;
+			right: 50%;
+			transform: translateX(50%);
+		}
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+	}
+
+	&-header {
+		margin-top: 4rem;
+		margin-bottom: 45px;
+		@media (max-width: 767px) {
+			text-align: center;
+		}
+		h2 {
+			font-size: clamp(2rem, 5.5vw, 5rem);
+			font-weight: bold;
+			line-height: 1;
+			.secondary {
+				color: #ff5254;
+			}
+		}
+	}
+
+	.list {
+		list-style: none;
+		margin: 0 0 1rem;
+		padding: 0;
+
+		&-item {
+			display: flex;
+			align-items: center;
+
+			.title {
+				font-weight: bold;
+				text-shadow: 0 1px 5px #f9fafb;
+			}
+
+			.item-badge {
+				color: white;
+				padding: 0.5rem 0.5rem;
+				border-radius: 0 6px 6px 0;
+				font-size: 1.1rem;
+				margin-right: 5px;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+
+			&:nth-child(1) {
+				.item-badge {
+					background-image: linear-gradient(to right, #f17eff, #d86cfb, #bb5cf8, #9b4df5, #7341f2);
+				}
+			}
+			&:nth-child(2) {
+				.item-badge {
+					background-image: linear-gradient(to right, #a5c363, #77ca83, #41cca9, #00cbcd, #00c7e8);
+				}
+			}
+			&:nth-child(3) {
+				.item-badge {
+					background-image: linear-gradient(to right, #eae536, #f5cf2a, #fcb929, #ffa42f, #ff8e39);
+				}
+			}
+			&:nth-child(4) {
+				.item-badge {
+					background-image: linear-gradient(to right, #af62a1, #c85996, #de5184, #ee4c6c, #f74f4f);
+				}
+			}
+			&:nth-child(5) {
+				.item-badge {
+					background-image: linear-gradient(to right, #ff0698, #ff3d6e, #ff7545, #ffa918, #ffd800);
+				}
+			}
+			&:nth-child(6) {
+				.item-badge {
+					background-image: linear-gradient(to right, #00f0ff, #00cfff, #00abfb, #0085ea, #355bcb);
+				}
+			}
+			&:nth-child(7) {
+				.item-badge {
+					background-image: linear-gradient(to right, #aeff00, #8bdf04, #6bc005, #4ca203, #2f8400);
+				}
+			}
+			&:nth-child(8) {
+				.item-badge {
+					background-image: linear-gradient(to right, #ffb400, #ff822e, #ff3568, #ff00af, #f600ff);
+				}
+			}
+			&:nth-child(9) {
+				.item-badge {
+					background-image: linear-gradient(to right, #f17eff, #d86cfb, #bb5cf8, #9b4df5, #7341f2);
+				}
+			}
+			&:nth-child(10) {
+				.item-badge {
+					background-image: linear-gradient(to right, #a5c363, #77ca83, #41cca9, #00cbcd, #00c7e8);
+				}
+			}
+			&:nth-child(11) {
+				.item-badge {
+					background-image: linear-gradient(to right, #eae536, #f5cf2a, #fcb929, #ffa42f, #ff8e39);
+				}
+			}
+		}
+	}
+}

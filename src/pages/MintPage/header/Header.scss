@@ -1,0 +1,141 @@
+.header {
+	width: 100%;
+	z-index: 1000;
+	top: 0;
+	background-color: #ff5254;
+	position: fixed;
+	
+	// @media (min-width: 767px) {
+	// 	position: fixed;
+	// }
+
+	&.support-header {
+		&.header-bg {
+			background-color: #ff5254;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	&.sticky {
+		position: fixed;
+		top: 0;
+		background-color: #ff5254;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	}
+
+	&.sticky {
+		.navbar {
+			background-color: #ff5254;
+			transition: background-color .3s ease;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	.navbar {
+		padding: 0.8rem 1rem;
+		background-color: transparent;
+		transition: background-color .3s ease;
+
+		@media (max-width: 991px) {
+			padding: 0.4rem 15px;
+		}
+		.nav {
+			&-link {
+				text-transform: uppercase;
+				color: white;
+				font-weight: 500;
+			}
+		}
+	}
+	.social {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		height: 100%;
+		align-items: center;
+
+		&-link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			text-decoration: none;
+			color: white;
+
+			&:hover {
+				transition: all 0.5s ease;
+				color: #000;
+
+				img {
+					filter: brightness(20%);
+				}
+			}
+
+			img {
+				width: 18px;
+				height: 18px;
+				object-fit: cover;
+			}
+		}
+	}
+	.btn-connect {
+		background-color: #fff;
+		color: #000;
+		text-transform: uppercase;
+		font-weight: bold;
+		border-color: white;
+	}
+	.navbar-collapse-after {
+		display: none;
+		@media (min-width: 768px) {
+			display: flex;
+		}
+
+		@media (min-width: 1200px) {
+			display: none;
+		}
+	}
+}
+
+
+.modal {
+	&-header {
+		&.header-center {
+			text-align: center;
+			justify-content: center;
+			.btn-close {
+				position: absolute;
+				right: 15px;
+			}
+		}
+		.modal {
+			&-title {
+				font-weight: bold;
+				font-family: 'Roboto';
+			}
+		}
+	}
+	&-dialog {
+		&.modal {
+			&-md {
+				@media (min-width: 576px) {
+					max-width: 650px;
+				}
+			}
+		}
+	}
+
+	&-body {
+		.heading {
+			font-weight: bold;
+			font-size:1.3rem;
+			font-family: 'Roboto';
+			color: #ff5254;
+		}
+		.sub-heading {
+			font-size: 1.2rem;
+		}
+	}
+}

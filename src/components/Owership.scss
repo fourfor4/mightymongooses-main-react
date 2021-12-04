@@ -1,0 +1,108 @@
+.owership {
+	padding: 2rem 0 1rem;
+	&-layout {
+		padding-bottom: 2.0rem;
+		background-image: linear-gradient(to left top, #ffecce, #ecf5db, #e4f9ed, #e9fbfb, #f5fbfe);
+	}
+
+	&-header {
+		h2 {
+			font-size: clamp(2rem, 5.5vw, 5.4rem);
+			font-weight: bold;
+			line-height: 1;
+		}
+		h3 {
+			line-height: 1;
+			color: #ff5254;
+			font-weight: bold;
+			font-size: clamp(2rem, 5.0vw, 4.5rem);
+		}
+	}
+}
+
+.team {
+	background-image: url('./images/image-team.png');
+	background-position: center right;
+	background-size: auto;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	padding: 4.5rem 0 0;
+
+	@media (max-width: 991px) {
+		background-size: 45%;
+	}
+	@media (max-width: 767px) {
+		background-image: none;
+	}
+
+	&-header {
+		margin-bottom: 50px;
+		h2 {
+			line-height: 1;
+			font-size: clamp(2.4rem, 6.5vw, 6.5rem);
+			font-weight: bold;
+			margin-bottom: 0;
+			color: #ff5254;
+		}
+		h3 {
+			line-height: 1;
+			font-size: clamp(2rem, 5.5vw, 5.4rem);
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+	}
+
+	&-item {
+		margin-bottom: 15px;
+		@media (max-width: 991px) {
+			margin: 20px auto;
+			max-width: 285px;
+		}
+
+		&-body {
+			text-align: center;
+			padding: 0.2rem;
+
+			.title {
+				font-weight: bold;
+				font-size: 1.1rem;
+				margin-bottom: 0;
+
+				.secondary {
+					color: #ff5254;
+				}
+			}
+
+			.subtitle {
+				font-size: 0.8rem;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.bottom-header-layout {
+		position: relative;
+		.bottom-header {
+			position: absolute;
+			h3 {
+				line-height: 1;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: clamp(2.4rem, 6.5vw, 8.5rem);
+				background: #bb5cf8;
+				// background: -webkit-linear-gradient(to right, #fea257 0%, #ff2f53 100%);
+				// background: -moz-linear-gradient(to right, #fea257 0%, #ff2f53 100%);
+				// background: linear-gradient(to right, #fea257 0%, #ff2f53 100%);
+
+				background: linear-gradient(to right, #f17eff, #d86cfb, #bb5cf8, #9b4df5, #7341f2);
+				background-clip: text;
+				text-emphasis-color: transparent;
+				-webkit-text-fill-color: transparent;
+			}
+
+			@media (max-width: 991px) {
+				position: static;
+				text-align: center;
+			}
+		}
+	}
+}

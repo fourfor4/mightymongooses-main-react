@@ -1,0 +1,23 @@
+.mighty-tabs {
+	padding-top: 100px;
+
+	.flex-column {
+		margin-bottom: 2rem;
+		.nav {
+			&-link {
+				text-transform: uppercase;
+				cursor: pointer;
+				color: #000;
+				font-weight: bold;
+				font-size: 1.4rem;
+				background-color: #e9e9e9;
+				border-radius: 0;
+
+				&.active {
+					background-color: #ff5254;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

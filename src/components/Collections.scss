@@ -1,0 +1,56 @@
+.collections {
+	&-header {
+		padding-top: 4rem;
+		@media (max-width: 767px) {
+			padding-top: 1.5rem;
+		}
+		h2 {
+			font-size: clamp(2rem, 6.5vw, 6.4rem);
+			font-weight: bold;
+			line-height: 1;
+		}
+		h3 {
+			color: #ff5254;
+			font-weight: bold;
+			font-size: clamp(2rem, 5.0vw, 4.5rem);
+			line-height: 1;
+		}
+	}
+
+	@media (max-width: 767px) {
+		text-align: center;
+	}
+
+	.slider {
+		margin-left: -15px;
+		margin-right: -15px;
+
+		@media (max-width: 767px) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		&-item {
+			padding: 8px;
+		}
+	}
+
+	&-container {
+		position: relative;
+	}
+
+	.btn-collect {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: transparent;
+		color: white;
+		border-color: #ff0698;
+		background-image: linear-gradient(to right, #ff0698, #ff3d6e, #ff7545, #ffa918, #ffd800);
+
+		@media (max-width: 767px) {
+			left: 50%;
+			transform: none;
+			position: static;
+		}
+	}
+}

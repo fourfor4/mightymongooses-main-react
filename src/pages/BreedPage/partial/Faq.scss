@@ -1,0 +1,97 @@
+.faq {
+	background: url('./images/faq-bg.png') #fff9f3;
+	background-position: bottom right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 4.5rem 0 2.5rem;
+
+	&-header {
+		// padding-top: 2rem;
+		margin-bottom: 3rem;
+		h2 {
+			line-height: 1;
+			font-size: clamp(2rem, 5.5vw, 5.4rem);
+			font-weight: bold;
+		}
+		h3 {
+			color: #ff5254;
+			font-weight: bold;
+			line-height: 1;
+			font-size: clamp(2rem, 5.0vw, 4.5rem);
+		}
+	}
+
+	&-card {
+		background-image: linear-gradient(to right bottom, #fe7dc3, #ff63a2, #ff487c, #fa2e52, #eb1d25);
+		color: white;
+		border-radius: 6px;
+		font-size: 1rem;
+		margin-bottom: 40px;
+
+		&-header {
+			padding: 2rem 2rem 0;
+		}
+		&-body {
+			padding: 2rem;
+
+			.faq-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+
+				.faq-item {
+					word-break: break-all;
+					&:not(:last-child) {
+						padding-top: 0.4rem;
+						padding-bottom: 0.8rem;
+						margin-bottom: 10px;
+						border-bottom: 1px dashed rgba(255, 255, 255, 0.49);
+					}
+					strong {
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+
+	.list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		&-item {
+			h6 {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.accordion {
+		&-button {
+			background-color: transparent !important;
+			outline: none;
+			box-shadow: none;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1.4rem;
+			color: #000;
+
+			&::before {
+				content: '';
+				position: absolute;
+				right: 10px;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: white;
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.38);
+			}
+			&::after {
+				z-index: 2;
+			}
+		}
+		&-item {
+			background-color: transparent;
+		}
+	}
+}

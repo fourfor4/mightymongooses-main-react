@@ -1,0 +1,30 @@
+.Buying {
+	padding: 4.5rem 0 0;
+	background-image: url('./images/story-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	padding-bottom: 3rem;
+
+	&-header {
+		margin-bottom: 3rem;
+		@media (max-width: 767px) {
+			margin-bottom: 2rem;
+		}
+		h2 {
+			line-height: 1;
+			font-size: 3.0rem;
+			font-weight: bold;
+			margin-bottom: 0;
+			font-size: clamp(2rem, 5.5vw, 5.4rem);
+		}
+		h3 {
+			color: #ff5254;
+			line-height: 1;
+			font-size: 4rem;
+			font-weight: bold;
+			margin-bottom: 0;
+			font-size: clamp(2rem, 5.0vw, 4.5rem);
+		}
+	}
+}

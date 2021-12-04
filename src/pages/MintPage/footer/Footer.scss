@@ -1,0 +1,132 @@
+.footer {
+	background-color: #424141;
+	// background-image: url('./images/footer-bg.png');
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	color: white;
+	min-height: 90vw;
+	padding-bottom: 50px;
+
+	&-header {
+		margin-top: 50px;
+		margin-bottom: 50px;
+		h2 {
+			color: white;
+			font-size: clamp(2rem, 5.0vw, 4.5rem);
+			font-weight: bold;
+			line-height: 1;
+			margin: 0;
+		}
+		h3 {
+			color: #ff5254;
+			font-weight: bold;
+			font-size: clamp(2rem, 6.5vw, 6.6rem);
+			line-height: 1;
+			margin: 0;
+		}
+	}
+
+	.foo {
+		margin-top: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&-body {
+			display: flex;
+			align-items: center;
+			padding-left: 15px;
+			min-width: 300px;
+		}
+	}
+}
+.copyright {
+	background-color: #363636;
+	padding: 0.5rem 0;
+	color: #a0a0a0;
+	font-weight: normal;
+	@media (max-width: 767px) {
+		text-align: center;
+		padding: 1.2rem 0;
+	}
+	&-layout {
+		display: inline-flex;
+		align-items: center;
+		margin-right: 15px;
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+	&-icon {
+		margin-right: 15px;
+		@media (max-width: 767px) {
+			margin-right: 0;
+			margin-bottom: 1.2rem;
+		}
+	}
+	&-content {
+		h6 {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.social {
+		display: inline-flex;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		@media (max-width: 991px) {
+			display: flex;
+			justify-content: center;
+		}
+		&-link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			text-decoration: none;
+			color: white;
+			img {
+				width: 18px;
+				height: 18px;
+				object-fit: cover;
+			}
+
+			&:hover {
+				transition: all 0.5s ease;
+				color: #000;
+
+				img {
+					filter: brightness(20%);
+				}
+			}
+		}
+	}
+	.developed-by {
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+		p {
+			margin: 0;
+		}
+		@media (min-width: 1200px) {
+			align-items: flex-end;
+		}
+		@media (max-width: 991px) {
+			align-items: flex-end;
+		}
+		@media (min-width: 992px) {
+			align-items: flex-end;
+		}
+		@media (max-width: 767px) {
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+	}
+}

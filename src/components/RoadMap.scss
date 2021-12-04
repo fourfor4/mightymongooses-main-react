@@ -1,0 +1,125 @@
+.road-map {
+	padding: 4.5rem 0 1rem;
+	background-color: #ffecd8;
+	&-header {
+		margin-bottom: 5rem;
+		@media (max-width: 767px) {
+			margin-bottom: 2rem;
+		}
+
+		h2 {
+			line-height: 1;
+			font-size: 4rem;
+			font-weight: bold;
+			margin-bottom: 10px;
+			color: #ff5254;
+			font-size: clamp(2rem, 6.5vw, 6.6rem);
+		}
+		h3 {
+			line-height: 1;
+			font-size: 2.4rem;
+			font-weight: bold;
+			margin-bottom: 0;
+			font-size: clamp(2rem, 5.0vw, 4.5rem);
+		}
+	}
+
+	&-body {
+		.list {
+			list-style: none;
+			padding-left: 0;
+			position: relative;
+			padding-left: 30px;
+			@media (max-width: 767px) {
+				margin-left: 20px;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 2px;
+				height: 100%;
+				background-color: #606060;
+			}
+			&-item {
+				position: relative;
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+
+				.item-header {
+					font-weight: bold;
+					font-size: 1.2rem;
+					margin-bottom: 15px;
+				}
+
+				.item-content {
+					@media (max-width: 767px) {
+						padding-right: 15px;
+					}
+					img {
+						width: 100%;
+						max-width: 400px;
+						object-fit: cover;
+
+						@media (max-width: 767px) {
+							width: 100%;
+							max-width: 300px;
+							object-fit: cover;
+						}
+					}
+					p {
+						position: relative;
+						padding-left: 20px;
+						&::before {
+							content: "\f105";
+							font-family: "Font Awesome 6 Free";
+							position: absolute;
+							font-weight: 900;
+							left: 0;
+						}
+					}
+				}
+
+				&:nth-child(odd) {
+					.item-header {
+						background-image: linear-gradient(to right bottom, #fe7dc3, #ff63a2, #ff487c, #fa2e52, #eb1d25);
+						background-clip: text;
+						text-emphasis-color: transparent;
+						-webkit-text-fill-color: transparent;
+					}
+					&::before {
+						content: '';
+						position: absolute;
+						left: -44px;
+						top: 0px;
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						background-image: linear-gradient(to right bottom, #fe7dc3, #ff63a2, #ff487c, #fa2e52, #eb1d25);
+					}
+				}
+				&:nth-child(even) {
+					.item-header {
+						background-image: linear-gradient(to right bottom, #09e930, #00e390, #00d8cd, #00c8eb, #01b4e8);
+						background-clip: text;
+						text-emphasis-color: transparent;
+						-webkit-text-fill-color: transparent;
+					}
+					&::before {
+						content: '';
+						position: absolute;
+						left: -44px;
+						top: 0px;
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						background-image: linear-gradient(to right bottom, #09e930, #00e390, #00d8cd, #00c8eb, #01b4e8);
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.mongoose-app {
+  max-width: 1920px;
+  margin: 0 auto;
+  // background-color: aquamarine;
+  background-image: url('../../assets/img/bgs/background.png');
+
+
+  .page-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .container-xl {
+    max-width: 1730px;
+    
+    margin: 0 auto;
+  }
+}
+
+.footer-section {
+  background-color: #363636;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: white;
+
+  .footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .mid-section {
+      ul {
+        display: flex;
+
+        li {
+          list-style: none;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}
